@@ -1,8 +1,7 @@
-hi, Hi there! I am Botty!, Hello! I am Botty the bot.       
+Input,Output 1, Output 2
+hi, Hi there! I am Botty!, Hello! I am Botty the bot.
 welcome,Welcome!, You have arrived onto the scene!
 how are you, I am fine!, I am doing good. How about you?
 what is your name, My name is Botty., You can call me Botty.
 bye, Nice talking to you!, Seeya soon. Hope you had a good time talking.
-
-
-can you help, Yes I can.,  No I cannot.about.  
+can you help, Yes I can!, I would love to! 

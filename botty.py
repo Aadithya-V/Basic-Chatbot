@@ -1,27 +1,22 @@
-import csv
+from replyengine import get_reply
 from random import randint
+
 print("You have entered into a conversation with Botty, the bot. Type end to exit the conversation.")
-csv_f =open("csv_dataset.txt", "r") 
-csv_reader = csv.reader(csv_f, delimiter=",")
 
 while True:
-    match = 0
-    inp = input().lower()
-    
+    inp = input().lower().replace(",","").replace("?","").replace("!","").replace(".","")
+
     if inp == "end":
         break 
-    
-    for line in csv_reader:
-        if inp == line[0]:
-            match = 1
-            print(line[randint(1, 2)])
 
-    csv_f.seek(0)       
-       
-    if match == 0:
-        print("No matching output found!")
+    reply = get_reply("csv_dataset.txt", inp)
+   
+    if reply != None:
+        print(reply[randint(0,1)])
+
+    else : 
+        print("No appropriate output found!")
 
 
-csv_f.close()
 
 
