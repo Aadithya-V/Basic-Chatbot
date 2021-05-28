@@ -4,9 +4,9 @@ from random import randint
 print("You have entered into a conversation with Botty, the bot. Type end to exit the conversation.")
 
 while True:
-    inp = input().lower().replace(",","").replace("?","").replace("!","").replace(".","")
-
-    if inp == "end":
+    inp = input()
+    
+    if inp.lower() == "end":
         break 
 
     reply = get_reply("csv_dataset.txt", inp)
