@@ -1,2 +1,3 @@
 # Basic-Chatbot
- This is a primite chatbot coded using python.
+
+This is a primitive chatbot coded using python.
